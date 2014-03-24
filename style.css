@@ -1,0 +1,310 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+* {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, p, li {
+  font-weight: 300; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+html {
+  -webkit-font-smoothing: antialiased; }
+
+.in {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  max-width: 600px; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+h1 {
+  /* Default Screen*/
+  font-size: 32pt;
+  padding-bottom: 0.3em;
+  text-align: center; }
+  @media screen and (max-width: 768px), screen and (max-device-width: 768px) {
+    h1 {
+      font-size: 24pt; } }
+  @media screen and (max-width: 479px), screen and (max-device-width: 479px) and (orientation: portrait) {
+    h1 {
+      font-size: 21.33333pt; } }
+
+h2 {
+  /* Default Screen*/
+  font-size: 28pt;
+  padding-bottom: 0.3em;
+  text-align: center; }
+  @media screen and (max-width: 768px), screen and (max-device-width: 768px) {
+    h2 {
+      font-size: 21pt; } }
+  @media screen and (max-width: 479px), screen and (max-device-width: 479px) and (orientation: portrait) {
+    h2 {
+      font-size: 18.66667pt; } }
+
+h3 {
+  /* Default Screen*/
+  font-size: 22pt;
+  padding-bottom: 0.3em;
+  text-align: center; }
+  @media screen and (max-width: 768px), screen and (max-device-width: 768px) {
+    h3 {
+      font-size: 16.5pt; } }
+  @media screen and (max-width: 479px), screen and (max-device-width: 479px) and (orientation: portrait) {
+    h3 {
+      font-size: 14.66667pt; } }
+
+p, li {
+  /* Default Screen*/
+  font-size: 16pt;
+  padding-bottom: 0.3em;
+  text-align: center; }
+  @media screen and (max-width: 768px), screen and (max-device-width: 768px) {
+    p, li {
+      font-size: 12pt; } }
+  @media screen and (max-width: 479px), screen and (max-device-width: 479px) and (orientation: portrait) {
+    p, li {
+      font-size: 10.66667pt; } }
+
+::selection {
+  background-color: #3e38f3;
+  color: #cac8fc; }
+
+@media screen and (max-width: 600px), screen and (max-device-width: 600px) {
+  br {
+    display: none; } }
+	
+#header {
+	background-color: #f6f5f7;
+	padding: 6% 0;
+	color: ffc073;
+	/* Navigation */
+	padding-top: 1.5%;
+}
+  #header a:hover {
+    color: #979ff7; }
+  #header img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 5%; }
+  #header ul {
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    text-align: right;
+    padding-bottom: 3%; }
+    @media screen and (max-width: 600px), screen and (max-device-width: 600px) {
+      #header ul {
+        text-align: center;
+        padding-bottom: 6%; }
+        #header ul li {
+          /* Default Screen*/
+          font-size: 20pt;
+          padding-bottom: 0.3em;
+          text-align: center;
+          margin: 0 3%; } }
+        @media screen and (max-width: 600px) and (max-width: 768px), screen and (max-device-width: 600px) and (max-width: 768px), screen and (max-width: 600px) and (max-device-width: 768px), screen and (max-device-width: 600px) and (max-device-width: 768px) {
+          #header ul li {
+            font-size: 15pt; } }
+        @media screen and (max-width: 600px) and (max-width: 479px), screen and (max-device-width: 600px) and (max-width: 479px), screen and (max-width: 600px) and (max-device-width: 479px) and (orientation: portrait), screen and (max-device-width: 600px) and (max-device-width: 479px) and (orientation: portrait) {
+          #header ul li {
+            font-size: 13.33333pt; } }
+  #header li {
+    margin: 0 1%;
+    display: inline; }
+#apps {
+  background-color: #f6f6f6;
+  padding: 3% 0;
+  color: #aaaaaa; }
+  #apps a:hover {
+    color: #767676; }
+  #apps .grid {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden; }
+  #apps .col {
+    float: left;
+    width: 33%; }
+  @media screen and (max-width: 479px), screen and (max-device-width: 479px) and (orientation: portrait) {
+    #apps .col {
+      float: none;
+      display: block;
+      margin: 0 auto;
+      width: 80%; } }
+  #apps img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 17.54386%;
+    margin: 6% auto 3% auto; }
+  #apps p {
+    margin: 0 5%; }
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/*                                    BLOG                                    */
+/*////////////////////////////////////////////////////////////////////////////*/
+#blog {
+  background-color: #373a3b;
+  padding: 3% 0;
+  color: #d0d3d4; }
+  #blog a:hover {
+    color: #9ca1a2; }
+  #blog h1 {
+    padding-bottom: 0; }
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/*                                    ABOUT                                   */
+/*////////////////////////////////////////////////////////////////////////////*/
+#about {
+  background-color: #ededed;
+  padding: 3% 0;
+  color: #a1a1a1; }
+  #about a:hover {
+    color: #6e6e6e; }
+  #about .grid {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden; }
+  #about .col {
+    float: left;
+    width: 50%; }
+  #about .face {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 100%;
+    margin: 8% auto 8% auto; }
+  #about ul {
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; }
+  #about li {
+    margin: 0 1%;
+    display: inline; }
+    #about li img {
+      width: 10%; }
+    #about li a img:hover {
+      opacity: 0.6; }
+    #about li .laser {
+      width: 13%; }
+  #about h3 {
+    padding-bottom: 0; }
+  @media screen and (max-width: 479px), screen and (max-device-width: 479px) and (orientation: portrait) {
+    #about .col {
+      float: none;
+      display: block;
+      margin: 0 auto;
+      width: 80%; } }
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/*                                    CONTACT                                 */
+/*////////////////////////////////////////////////////////////////////////////*/
+#contact {
+  background-color: #6874f3;
+  padding: 3% 0;
+  color: #c6cbfb; }
+  #contact a:hover {
+    color: #d0fe02; }
+  #contact .grid {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    overflow: hidden; }
+  #contact .col {
+    float: left;
+    width: 50%; }
+  @media screen and (max-width: 479px), screen and (max-device-width: 479px) and (orientation: portrait) {
+    #contact .col {
+      float: none;
+      display: block;
+      margin: 0 auto;
+      width: 80%; } }
+  #contact img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    margin: 20% auto 10% auto; }
+  #contact a img:hover {
+    opacity: 0.6; }
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/*                                   LEGAL                                    */
+/*////////////////////////////////////////////////////////////////////////////*/
+#impressum {
+  background-color: #f6f6f6;
+  padding: 3% 0;
+  color: #aaaaaa; }
+  #impressum a:hover {
+    color: #0e1db4; }
+  #impressum h1, #impressum h2, #impressum h3, #impressum p, #impressum a {
+    text-align: left; }
+  #impressum p {
+    font-size: 14pt;
+    margin: 30px 0;
+    line-height: marginAndLineHeight; }
+    @media screen and (max-width: 768px), screen and (max-device-width: 768px) and (orientation: portrait) {
+      #impressum p {
+        font-size: 10.5pt;
+        margin: 22.5px 0;
+        line-height: 22.5px; } }
+    @media screen and (max-width: 479px), screen and (max-device-width: 479px) and (orientation: portrait) {
+      #impressum p {
+        font-size: 9.33333pt;
+        margin: 20px 0;
+        line-height: 20px; } }
+    @media screen and (max-width: 600px), screen and (max-device-width: 600px) {
+      #impressum p br {
+        display: inline; } }
+  #impressum a {
+    color: #6874f3; }
+  #impressum #home {
+    text-align: center; }
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/*                                  FOOTER                                    */
+/*////////////////////////////////////////////////////////////////////////////*/
+#footer {
+  background-color: #4e5ede;
+  padding: 1.5% 0;
+  color: #a4acee; }
+  #footer a:hover {
+    color: #7985e6; }
+  #footer img {
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    padding: 3% 0; }
+  #footer a img:hover {
+    opacity: 0.6; }
+  #footer ul {
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; }
+  #footer li {
+    margin: 0 1%;
+    display: inline; }
+  #footer .small {
+    /* Default Screen*/
+    font-size: 12pt;
+    padding-bottom: 0.3em;
+    text-align: center;
+    padding-bottom: 0; }
+    @media screen and (max-width: 768px), screen and (max-device-width: 768px) {
+      #footer .small {
+        font-size: 9pt; } }
+    @media screen and (max-width: 479px), screen and (max-device-width: 479px) and (orientation: portrait) {
+      #footer .small {
+        font-size: 8pt; } }
