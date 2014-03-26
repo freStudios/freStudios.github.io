@@ -100,7 +100,6 @@ p, li {
         text-align: center;
         padding-bottom: 6%; }
         #header ul li {
-          /* Default Screen*/
           font-size: 20pt;
           padding-bottom: 0.3em;
           text-align: center;
@@ -256,12 +255,6 @@ p, li {
   #impressum #home {
     text-align: center; }
 
-<<<<<<< HEAD
-/*////////////////////////////////////////////////////////////////////////////*/
-/*                                  FOOTER                                    */
-/*////////////////////////////////////////////////////////////////////////////*/
-=======
->>>>>>> gh-pages
 #footer {
   background-color: #ffc073;
   padding: 1.5% 0;
@@ -285,7 +278,6 @@ p, li {
     margin: 0 1%;
     display: inline; }
   #footer .small {
-    /* Default Screen*/
     font-size: 12pt;
     padding-bottom: 0.3em;
     text-align: center;
