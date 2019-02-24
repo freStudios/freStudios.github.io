@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phone Buddy for Apple Watch - Never Lose Your iPhone Again!</title>
+    <style>
+    body {
+        background: #131214;
+    }
+    .defaultVerticalPadding {
+        padding-top: 30px
+    }
+
+
+    .topnavContainer {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        display: table;
+        margin: 0 auto;
+    }
+    .topNav {
+text-decoration: none
+    }
+    .topnav a {
+        float: left;
+        color: #FD9426;
+        text-align: center;
+        padding: 14px 64px;
+        
+        text-decoration: none;
+        font-size: 24px;
+    }
+    .topnav a:hover {
+        color: #ffffff;
+    }
+    .topnav a.active {
+        color:#F65429;
+        text-decoration: none;
+    }
+    .onboardingImage {        
+        display: table;
+        margin: 0 auto;
+    }
+
+    .appStore {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        display: table;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        font-size: 24px;
+        color: white; 
+    }
+
+    .appStoreDetail {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        display: table;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: white; 
+        max-width: 720px;
+        padding: 15px
+    }
+
+    .appStoreSubDetail {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        display: table;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        color: white; 
+        max-width: 620px;
+        padding: 15px
+    }
+
+    @media screen and (max-width:1000px) {
+        .topnav a{ padding:14px 40px;}
+    }
+
+    @media screen and (max-width:600px) {
+        .topnav a{ padding:14px 16px;}
+    }
+
+    @media screen and (max-width:400px) {
+        .topnav a{ font-size: 20px;padding:14px 12px;}
+    }
+
+/* Buzz Out */
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.hvr-buzz-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+  -webkit-animation-name: hvr-buzz-out;
+  animation-name: hvr-buzz-out;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+    </style>
+  </head>
+  <body role="main">
+
+
+    <div class="topnavContainer">
+      <div class="topnav">
+          <a class="active" href="#home">Home</a>
+          <a href="Phone-Buddy-Legal.html">Legal</a>
+          <a href="Phone-Buddy-FAQ.html">FAQ</a>
+          <a href="Phone-Buddy-Contact.html">Contact</a>
+      </div>
+  </div>  
+              
+<div class="defaultVerticalPadding"></div>
+
+    <div class="container">
+
+        <div class="onboardingImage">
+            <img src="images/phoneBuddyOnboarding.svg" alt="table with iPhone - Apple Watch - notifies you of connection lost with iPhone">
+        </div>
+
+        <div class="defaultVerticalPadding"></div>
+
+        <div class="onboardingImage">
+            <img src="images/phoneBuddyOnboarding2.svg" alt="path to Apple Watch where Phone Buddy for Apple Watch notifies you of connection lost with iPhone">
+        </div>
+
+        <div class="defaultVerticalPadding"></div>
+
+        <div class="onboardingImage">
+
+            <div class="hvr-buzz-out">
+                    <img src="images/phoneBuddyOnboarding3.svg" alt="Apple Watch notifies you of connection lost with iPhone">   
+            </div>
+                 
+        </div>
+    </div>
+
+    <div class="defaultVerticalPadding"></div>
+
+    <div class="appStore">
+
+        <div>Phone Buddy for Apple Watch</div>
+        <div class="defaultVerticalPadding"></div>
+        <div>Never Lose Your iPhone Again!</div>
+        <div class="defaultVerticalPadding"></div>
+
+        <div class="appStore">
+        <a href="default.asp">    
+            <img src="images/appstorebadge.svg" alt="Apple Watch notifies you of connection lost with iPhone">
+        </a>
+        </div>
+    </div>
+
+    <div class="appStoreDetail">
+                      <div class="appStoreDetail">
+
+                    With Active mode enabled, Phone Buddy notifies your Watch the moment connection is lost with your iPhone.
+                    </div>
+
+                    <div class="appStoreDetail">
+                        Phone Buddy will help prevent you from forgetting your phone at restaurants, coffee shops, movie theaters, bars, and any time distraction occurs. 
+                    </div> 
+                     
+                    
+                            <div class="appStoreSubDetail">
+                                Active mode is a subscription feature. 1 month free trial is offered. Subscription is only $4.99 (USD) a YEAR after free trial. 
+                            </div>
+        </div>
+
+    <div class="defaultVerticalPadding"></div>
+
+    <div class="topnavContainer">
+            <div class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="Phone-Buddy-Legal.html">Legal</a>
+                <a href="Phone-Buddy-FAQ.html">FAQ</a>
+                <a href="Phone-Buddy-Contact.html">Contact</a>
+            </div>
+        </div>  
+
+
+
+  </body>
+</html>
+
+
+
