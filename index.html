@@ -1,262 +1,283 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8"/>
-	<meta name="apple-itunes-app" content="app-id=1013757498"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Battle Wall Alpha</title>
-	
-	<meta name="apple-itunes-app" content="app-id=1013757498, affiliate-data=myAffiliateData, app-argument=myURL">
-	<meta name="p:domain_verify" content="f2285d7def28c4ced3d4a189722b1f43"/>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phone Buddy for Apple Watch - Never Lose Your iPhone Again!</title>
+    <style>
+    body {
+        background: #131214;
+    }
+    .defaultVerticalPadding {
+        padding-top: 30px
+    }
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
 
-<style>
-@import url(http://fonts.googleapis.com/css?family=Raleway);
+    .topnavContainer {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        display: table;
+        margin: 0 auto;
+    }
+    .topNav {
+text-decoration: none
+    }
+    .topnav a {
+        float: left;
+        color: #FD9426;
+        text-align: center;
+        padding: 14px 64px;
+        
+        text-decoration: none;
+        font-size: 24px;
+    }
+    .topnav a:hover {
+        color: #ffffff;
+    }
+    .topnav a.active {
+        color:#F65429;
+        text-decoration: none;
+    }
+    .onboardingImage {        
+        display: table;
+        margin: 0 auto;
+    }
 
-html, body, #content {
-	margin: 0px;
-	height: 100%;
-	font-family: sans-serif;
-	font-weight: lighter;
-	color: #bf4459;
-	background-color: #ffffff;
-	text-align: center;
-	line-height: 1.4;
+    .appStore {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        display: table;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        font-size: 24px;
+        color: white; 
+    }
+
+    .appStoreDetail {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        display: table;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: white; 
+        max-width: 720px;
+        padding: 15px
+    }
+
+    .appStoreSubDetail {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        display: table;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        color: white; 
+        max-width: 620px;
+        padding: 15px
+    }
+
+    @media screen and (max-width:1000px) {
+        .topnav a{ padding:14px 40px;}
+    }
+
+    @media screen and (max-width:600px) {
+        .topnav a{ padding:14px 16px;}
+    }
+
+    @media screen and (max-width:400px) {
+        .topnav a{ font-size: 20px;padding:14px 12px;}
+    }
+
+/* Buzz Out */
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
 }
-#splash {
-	height: 100%;
-	width: 100%;
-	display: table;
-	table-layout: fixed;
-	max-width: 700px;
-	margin: auto;
-	position: relative;
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
 }
-@media screen and (min-width: 700px) {
-	#splash > div {
-		display: table-cell;
-		vertical-align: middle;
-		padding: 1em;
-		height: 100%;
-	}
-	#splash #left {
-		text-align: right;
-	}
-	#splash #right {
-		text-align: left;
-	}
-	#splash .iphone {
-		width: 288px;
-		height: 576px;
-	}
-	#screenshots img {
-		max-width: 200px;
-	}
-	#like-container {
-		position: absolute;
-		top: 100%;
-		right: 20px;
-		margin-top: -50px;
-	}
+.hvr-buzz-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-#chevron {
-	position: absolute;
-	left: 50%;
-	top: 100%;
-	margin-top: -2em;
-	color: #753b24;
-	opacity: 0.5;
-	margin-left: -0.5em;
+.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+  -webkit-animation-name: hvr-buzz-out;
+  animation-name: hvr-buzz-out;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
-@media screen and (max-width: 700px) {
-	#chevron {
-		display: none;
-	}
-	#splash .iphone {
-		width: 192px;
-		height: 384px;
-		display: inline-block;
-	}
-	#splash #left {
-		padding: 10px;
-	}
-	#screenshots img {
-		max-width: 100px;
-	}
-	#splash .appstore {
-		display: none;
-	}
-}
-img.appstore {
-	max-width: 120px;
-}
-.iphone {
-	background-image: url('http://app-stop.appspot.com/static/5s.png');
-	background-size: contain;
-	position: relative;
-	width: 720px;
-	height: 1440px;
-}
-.iphone img {
-	position: absolute;
-	top: 17.9%;
-	left: 14%;
-	width: 73%;
-}
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Raleway", sans-serif;
-	font-weight: normal;
-}
-#icon-row {
-	margin: 30px;
-	margin-top: 40px;
-	margin-bottom: 80px;
-	border-bottom: 1px solid rgba(0,0,0,0.3);
-	position: relative;
-}
-#icon-row #icon-container {
-	position: absolute;
-	width: 80px;
-	height: 80px;
-	left: 50%;
-	top: 50%;
-	margin-left: -50px;
-	margin-top: -50px;
-	border: 10px solid #ffffff;
-}
-#icon-row img {
-	width: 100%;
-	border-radius: 19px;
-	box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
-}
-#description {
-	margin: auto;
-	width: 90%;
-	max-width: 600px;
-}
-#screenshots {
-	margin-bottom: 2em;
-}
-#screenshots img {
-	border: 1px solid white;
-	box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
-	margin: 1em;
-}
-#description {
-	white-space: pre-wrap;
-}
-#stars {
-	text-align: center;
-	font-style: italic;
-	font-size: small;
-}
-#stars span {
-	display: block;
-	font-size: 30px;
-	font-style: normal;
-}
-#attribution {
-	font-size: small;
-	padding: 2em;
-}
-#attribution a {
-	color: #753b24;
-}
-</style>
+
+    </style>
+  </head>
+  <body role="main">
 
 
-</head>
-<body>
-	<!-- begin Facebook SDK -->
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=385205984962960&version=v2.0";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-	<!-- end Facebook SDK -->
+    <div class="topnavContainer">
+      <div class="topnav">
+          <a class="active" href="#home">Home</a>
+          <a href="Phone-Buddy-Legal.html">Legal</a>
+          <a href="Phone-Buddy-FAQ.html">FAQ</a>
+          <a href="Phone-Buddy-Contact.html">Contact</a>
+      </div>
+  </div>  
+              
+<div class="defaultVerticalPadding"></div>
 
-<div id='content' contenteditable="false">
+    <div class="container">
 
+        <div class="onboardingImage">
+            <img src="images/phoneBuddyOnboarding.svg" alt="table with iPhone - Apple Watch - notifies you of connection lost with iPhone">
+        </div>
 
-<div id='chevron' class='fa fa-chevron-down'></div>
-<div id='splash'>
-	<div id='left'>
-		<h1>Battle Wall Alpha</h1>
-		<p>Attack, defend, and destroy battle walls with friends in the same room (like LAN) - Place steel panes to protect your Battle Wall from enemy attacks!</p>
-		<a href="https://itunes.apple.com/us/app/battle-wall-alpha/id1013757498?mt=8&amp;uo=4"><img class='appstore' src='http://app-stop.appspot.com/static/appstore.svg' alt='Download on the Apple App Store'/></a>
-	</div>
-	<div id='right'>
-		<div class='iphone'>
-			<img src='http://a4.mzstatic.com/us/r30/Purple5/v4/88/3f/29/883f2966-c5a8-c6e6-144e-879b2a48230b/screen1136x1136.jpeg'/>
-		</div>
-	</div>
-</div>
+        <div class="defaultVerticalPadding"></div>
 
-<div id='icon-row'>
-	<div id='icon-container'>
-		<img src='http://is3.mzstatic.com/image/pf/us/r30/Purple7/v4/e0/5b/8e/e05b8e53-6854-ce60-4031-61d7ee8c2870/pr_source.png'/>
-	</div>
-</div>
+        <div class="onboardingImage">
+            <img src="images/phoneBuddyOnboarding2.svg" alt="path to Apple Watch where Phone Buddy for Apple Watch notifies you of connection lost with iPhone">
+        </div>
 
-<div id='screenshots'>
-	
-		<img src=http://a4.mzstatic.com/us/r30/Purple1/v4/eb/98/62/eb98623f-69d6-ef24-e053-6e97c4f44cb7/screen1136x1136.jpeg />
-	
-		<img src=http://a3.mzstatic.com/us/r30/Purple7/v4/85/92/a8/8592a882-4f81-564c-132d-8173dba54518/screen1136x1136.jpeg />
-	
-</div>
+        <div class="defaultVerticalPadding"></div>
+
+        <div class="onboardingImage">
+
+            <div class="hvr-buzz-out">
+                    <img src="images/phoneBuddyOnboarding3.svg" alt="Apple Watch notifies you of connection lost with iPhone">   
+            </div>
+                 
+        </div>
+    </div>
+
+    <div class="defaultVerticalPadding"></div>
+
+    <div class="appStore">
+
+        <div>Phone Buddy for Apple Watch</div>
+        <div class="defaultVerticalPadding"></div>
+        <div>Never Lose Your iPhone Again!</div>
+        <div class="defaultVerticalPadding"></div>
+
+        <div class="appStore">
+        <a href="default.asp">    
+            <img src="images/appstorebadge.svg" alt="Apple Watch notifies you of connection lost with iPhone">
+        </a>
+        </div>
+    </div>
+
+    <div class="appStoreDetail">
+                      <div class="appStoreDetail">
+
+                    With Active mode enabled, Phone Buddy notifies your Watch the moment connection is lost with your iPhone.
+                    </div>
+
+                    <div class="appStoreDetail">
+                        Phone Buddy will help prevent you from forgetting your phone at restaurants, coffee shops, movie theaters, bars, and any time distraction occurs. 
+                    </div> 
+                     
+                    
+                            <div class="appStoreSubDetail">
+                                Active mode is a subscription feature. 1 month free trial is offered. Subscription is only $4.99 (USD) a YEAR after free trial. 
+                            </div>
+        </div>
+
+    <div class="defaultVerticalPadding"></div>
+
+    <div class="topnavContainer">
+            <div class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="Phone-Buddy-Legal.html">Legal</a>
+                <a href="Phone-Buddy-FAQ.html">FAQ</a>
+                <a href="Phone-Buddy-Contact.html">Contact</a>
+            </div>
+        </div>  
 
 
 
-<p id='description'>Attack, defend, and destroy battle walls with friends in the same room (like LAN)
-- Place steel panes to protect your Battle Wall from enemy attacks!
-- Attack your opponent to destroy their Battle Wall! 
-- Play with friends in the same room!
-- Use Emojis in your name!
-- Learn to use special attacks effectively!
-
-I challenge you to Battle Wall Alpha!
-
-Battle Wall Alpha uses multipeer technology, so you can Battle with nearby friends even when there is no service or wifi internet. 
-
-FOR BEST CONNECTIVITY TURN BOTH BLUETOOTH AND WIFI ON. Connecting to the same Wifi network if possible is helpful as well.
-
-For any questions or concerns please email: hello@fre-studios.com!</p>
-
-<p>
-	<a href="https://itunes.apple.com/us/app/battle-wall-alpha/id1013757498?mt=8&amp;uo=4"><img class='appstore' src='http://app-stop.appspot.com/static/appstore.svg' alt='Download on the Apple App Store'/></a>
-</p>
-
-<p>
-	
-	<div id='like-container'></div>
-	<a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-height="28"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" /></a>
-	<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
-	<script>
-	// dynamically create a Facebook like button for the current URL:
-	var like = document.createElement("div");
-	like.className = "fb-like";
-	like.setAttribute("data-href", location.href);
-	like.setAttribute("data-layout", "button_count");
-	like.setAttribute("data-action", "like");
-	like.setAttribute("data-show-faces", "true");
-	like.setAttribute("data-share", "true");
-	document.getElementById("like-container").appendChild(like);
-	</script>
-</p>
-
-<p id='copyright'>&copy; FRE STUDIOS LLC </p>
-
-<p id='attribution'>
-Landing page created with help from <a href="http://app-stop.appspot.com">AppStop</a></p>
-
-
-</div>
-
-</body>
+  </body>
 </html>
+
+
+
