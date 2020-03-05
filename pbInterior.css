@@ -1,0 +1,105 @@
+body {
+    background: #131214;
+    color: #E0EBFF;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 2.25em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.75em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em; 
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #0075D3;
+}
+
+a:hover {
+    color: #0075D3;
+    border-bottom: 1px solid #0075D3;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+p.license {
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+.separator {
+    height: 7px;
+    background: url(simpleseparator_2.png);
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.footer.end {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.footer a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer.end a {
+    color: #ccc;
+}
+
+.footer a:hover {
+    color: #fff;
+    border-bottom: none;
+}
+
+.row.header {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.row.header img {
+    width: 160px;
+    height: auto;
+}
+
+.row.header a {
+    border-bottom: none;
+}
+
+p.callout {
+    background: #1A1D24;
+    border-radius: 8px;
+    padding: 20px 25px;
+}
