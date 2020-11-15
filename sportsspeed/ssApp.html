@@ -17,9 +17,22 @@
 
 <style>
 
-img {
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
   width: 100%;
-  height: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
 }
 
 </style>
@@ -34,9 +47,24 @@ img {
 
 <h1>Our App</h1>
 
-<img src="AppScreens1.png" alt="Phone Buddy Notifer on Apple Watch displaying the Phone Lost Alert, the Device Distance Alert, and Signal Strength features.">
+<h2>Track speed and acceleration using your Apple Watch! See realtime acceleration and max speed. Improve your sports skills by tracking movement for consistency and gain.</h2>
 
-<h2>Don’t forget your iPhone again with Lost Phone Alerts on Apple Watch. Use Lost Phone Alert, Device Distance Alert, and Watch Left Alert and never lose your phone again!</h2>
+<div class="row"> 
+    <div class="column">
+        <img src="AppScreens1.jpg" alt="Sports Speedometer tracks movement speed using your Apple Watch">
+    </div>
+
+    <div class="column">
+        <img src="AppScreens2.jpg" alt="Sports Speedometer tracks realtime acceleration using your Apple Watch">
+    </div>
+
+    <div class="column">
+        <img src="AppScreens3.jpg" alt="Sports Speedometer keeps track of speed and acceleration so you can review history on Apple Watch">
+    </div>
+
+</div>
+
+
 
 <p>Phone Buddy Notifier is an Apple Watch app that alerts you when you lose bluetooth connection with your iPhone. Try it now. Apple Watch Series 2+ is required.</p>
 
@@ -46,8 +74,6 @@ img {
 
 <p>Phone Buddy Notifier is the perfect companion app for the Apple Watch with features like Bluetooth Monitoring Alerts, Watch Battery Charged Alert, and Last Connected Map.</p>
 
-<img src="AppScreens2.png" alt="Phone Buddy Notifer on Apple Watch displaying iPhone information, monitoring alerts configuration, and alert threshold settings.">
-
 <h3>Phone Buddy Bluetooth Monitoring Features</h3>
 <li>“Phone Lost” Connection Alert so you never lose your phone again.</li>
 <li>“Going Away” Distance Alerts with fully customizable bluetooth signal strength thresholds so you keep your devices safe and secure. </li>
@@ -56,8 +82,6 @@ img {
 <li>Phone Safety Alarm plays a loud Alarm when bluetooth connection is lost between your Apple Watch and iPhone to keep everything safe. </li>
 <li>Last Connected Map to help located iPhone (when network connectivity available) if your devices do disconnect.
     And more! </li>
-
-<img src="AppScreens3.png" alt="Phone Buddy Notifer on Apple Watch displaying Phone Lost Alert settings, Apple Watch Complication, and Phone Found alert.">
 
 <h2>Download Phone Buddy now and never lose your phone again.</h2>
 
