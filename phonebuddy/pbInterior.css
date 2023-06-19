@@ -47,6 +47,17 @@ p.license {
     white-space: pre-wrap;
 }
 
+.helpImages {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.helpImages img {
+    float: left;
+    margin: 10px;
+  }
+
 .separator {
     height: 7px;
     background: url(simpleseparator_2.png);
